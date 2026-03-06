@@ -4,7 +4,7 @@ import {motion} from "motion/react";
 
 const Hero = () => {
     return (
-        <div className="text-white py-10">
+        <div className="text-white py-0">
         
         <motion.img 
         initial={{ scale: 0.8, opacity: 0 }}
@@ -21,7 +21,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.5 }}
-            className="text-4xl md:text-5xl flex flex-col gap-4 font-bold mb-4">Créons ensemble ce qui parle pour vous
+            className="text-4xl md:text-5xl flex flex-col gap-4 font-bold mb-4">Hello!!! , C'est  Yasmine !
            
             <motion.span 
             className="text-purple-500"
@@ -29,7 +29,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }} > {/* // Texte avec animation d’apparition */}
             
-            {Array.from("Construis ton Portefolio").map((char, index) => (
+            {Array.from("<Développeuse web full-stack/>").map((char, index) => (
                 <motion.span
                 key={index}
                 initial={{ opacity: 0 }}
@@ -48,7 +48,7 @@ const Hero = () => {
             className="text-gray-400 text-lg mb-8"
             
             >
-            {Array.from("Commence ton voyage en créant un portefolio qui parle à ta place").map((char, index) => (
+            {Array.from("Créons ensemble des solutions numériques modernes, performantes et évolutives.").map((char, index) => (
                 <motion.span
                 key={index}
                 initial={{ opacity: 0 }}

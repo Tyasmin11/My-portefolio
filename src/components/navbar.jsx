@@ -52,8 +52,8 @@ const navbar = () => {
         <motion.div 
             initial={{ opacity: 0, x: 100, y: -100 }} 
                         animate={{ opacity: 1, x:0, y:0 }}
-                        transition={{duration: 0.5}}
-            className='container mx auto hidden md:flex justify-between items-center py-6'>
+                        transition={{duration: 0.8}}
+            className='container mx-auto hidden md:flex justify-between items-center py-3 '>
            {/* container : conteneur principal
                 mx-auto : centre horizontalement
                 hidden : caché par défaut sur mobile
