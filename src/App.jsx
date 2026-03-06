@@ -5,6 +5,7 @@ import Hero from './components/hero.jsx'
 import About from './components/about.jsx'
 import Services from './components/services.jsx'
 import Work from './components/work.jsx'
+import Contact from './components/contact.jsx'
 // Pour ajouter d'autres sections, importer les composants correspondants ici
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <About/>
       <Services/>
       <Work/>
+      <Contact/>
     </div>
 // Pour ajouter d'autres sections, insérer les composants correspondants ici
     
