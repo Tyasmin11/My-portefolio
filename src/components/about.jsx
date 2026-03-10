@@ -55,7 +55,7 @@ const about = () => {
           animate={inViewDesc ? { opacity: 1, y:0 } : {}}
           transition={{ duration: 0.3, delay: 0.1 }}
           className='mb-12 text-gray-400 text-center'>
-          Hello! I'm a passionate developer with a love for creating dynamic and user-friendly web applications. With a background in computer science and years of experience in the industry, I enjoy tackling complex problems and turning ideas into reality through code.
+          Hello! Moi c'est Yasmine TRAORE, Ingénieure des travaux en informatique, et amoureuse du code !!!. Actuellement en Master en Management des Systèmes d'Information, je suis passionnée par la création d'applications web modernes et performantes.
         </motion.p>
       
         <div className='flex flex-col md:flex-row justify-center item-center'>
@@ -74,7 +74,9 @@ const about = () => {
             animate={inViewText ? { opacity: 1, x:0 } : {}}
             transition={{ duration: 0.3, delay: 0.1 }}
             className='md:w-1/2 text-gray-400 px-4 md:px-0 text-base sm:text-lg md:text-xl'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam molestiae officia, porro quis dignissimos voluptates, nostrum pariatur quae optio reiciendis, soluta consectetur repudiandae ipsum. Rem nulla ducimus ab officiis quas.
+              Développeuse web full-stack, je travaille principalement avec <span className='text-purple-500'>React</span> et <span className='text-purple-500'>Tailwind CSS</span> pour concevoir des interfaces dynamiques et intuitives, ainsi qu’avec <span className='text-purple-500'>Spring Boot</span> pour développer des API robustes et sécurisées.
+
+              À travers mes projets, je mets en pratique mes compétences en développement frontend et backend afin de construire des applications complètes et bien structurées. Je suis toujours motivée par l’apprentissage de nouvelles technologies et la résolution de problèmes concrets grâce au développement logiciel.
           </motion.p>
         </div>
       
@@ -105,7 +107,7 @@ const about = () => {
             animate={inViewStat2 ? { opacity: 1 } : {}}
             transition={{ duration: 0.3, delay: 0.1 }}
             className='text-center'>
-            <h3 className='text-3xl md:text-8xl font-bold md:my-6 text-purple-500'>15+</h3>
+            <h3 className='text-3xl md:text-8xl font-bold md:my-6 text-purple-500'>10+</h3>
             <motion.p 
               ref={refStat2Text}
               initial={{ opacity: 0, y: 100 }}
@@ -123,7 +125,7 @@ const about = () => {
             animate={inViewStat3 ? { opacity: 1 } : {}}
             transition={{ duration: 0.3, delay: 0.1 }}
             className='text-center'>
-            <h3 className='text-3xl md:text-8xl font-bold md:my-6 text-purple-500'>20+</h3>
+            <h3 className='text-3xl md:text-8xl font-bold md:my-6 text-purple-500'>12+</h3>
             <motion.p 
               ref={refStat3Text}
               initial={{ opacity: 0, y: 100 }}

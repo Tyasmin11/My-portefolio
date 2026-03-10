@@ -69,8 +69,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
-            whileHover={{scale: 1.05}}
-            whileTap={{scale: 0.95}}
+            
             className="bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-400 transition duration-300">
             <Link to="contact" smooth={true} duration={500} offset={-70}>Contacte moi</Link>
             </motion.button>

@@ -60,7 +60,7 @@ useEffect(() => {
 
     const items = [
         {id: 1, text: 'A Propos', to : 'about'},
-        {id: 2, text: 'Mes Services', to : 'services'},
+        {id: 2, text: 'Mes Compétences', to : 'services'},
         {id: 3, text: 'Mes Projets', to : 'work'},
         {id: 4, text: 'Contactez Moi', to: 'contact'},
     ]

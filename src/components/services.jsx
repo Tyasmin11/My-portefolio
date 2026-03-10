@@ -7,33 +7,45 @@ const services = () => {
 
     const servicesData = [
         {
-            title: 'Web Development',
+            title: 'Spring Boot',
             description: 'Building responsive and dynamic websites using modern technologies.',
         },
         {
-            title: 'Web Development',
+            title: 'Laravel',
             description: 'Building responsive and dynamic websites using modern technologies.',
         },
         {
-            title: 'Web Development',
+            title: 'Python',
             description: 'Building responsive and dynamic websites using modern technologies.',
         },
         {
-            title: 'Web Development',
+            title: 'React Js',
             description: 'Building responsive and dynamic websites using modern technologies.',
         },
         {
-            title: 'Web Development',
+            title: 'Tailwind CSS',
             description: 'Building responsive and dynamic websites using modern technologies.',
         },
         {
-            title: 'Web Development',
+            title: 'Bootstrap',
+            description: 'Building responsive and dynamic websites using modern technologies.',
+        },
+         {
+            title: 'Git & GitHub',
+            description: 'Building responsive and dynamic websites using modern technologies.',
+        },
+         {
+            title: 'Postman',
+            description: 'Building responsive and dynamic websites using modern technologies.',
+        },
+         {
+            title: 'Figma Design',
             description: 'Building responsive and dynamic websites using modern technologies.',
         },
     ];
 
     const {ref, inView } = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0.2,
     });
   return (
@@ -44,8 +56,9 @@ const services = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className='container mx-auto px-4 text-center'>
-            <h2 className="text-3xl md:text-4xl font-bold underline mb-8">Services</h2>
-            <p className='mb-12 text-gray-400'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, ab, obcaecati suscipit aperiam velit quasi sapiente dolorem inventore amet assumenda iusto, veniam dolor ut ex voluptatum eveniet modi et non!</p>
+            <h2 className="text-3xl md:text-4xl font-bold underline mb-8">Mes compétences</h2>
+            <p className='mb-12 text-gray-400'>Mes compétences couvrent le développement d’applications web full-stack, avec une spécialisation en React et Tailwind CSS pour le frontend, ainsi qu’en Spring Boot pour la conception d’API robustes et structurées côté backend. Néanmoins, j'utilise également d'autres technologies au quotitien pour divers projets. Je suis aussi ouverte à l'apprentissage de nouvelles technologies.
+ </p>
         
             <div
                 className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
