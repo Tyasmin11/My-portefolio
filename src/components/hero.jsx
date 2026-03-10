@@ -1,6 +1,7 @@
 import React from "react";
 import avatar from "../assets/monavatar1.png";
 import {motion} from "motion/react";
+import { Link } from "react-scroll";
 
 const Hero = () => {
     return (
@@ -68,19 +69,25 @@ const Hero = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
-            className="bg-purple-500 text-white px-6 py-3 rounded-full">
-            Contacte moi
+            whileHover={{scale: 1.05}}
+            whileTap={{scale: 0.95}}
+            className="bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-400 transition duration-300">
+            <Link to="contact" smooth={true} duration={500} offset={-70}>Contacte moi</Link>
             </motion.button>
+
+
             <motion.button 
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
-            className="text-white border border-white px-6 py-3 rounded-full">
-            Mon histoire
+            transition={{ duration: 0.5, delay: 1 }}
+            
+            className="text-white border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300">
+            <Link to="about" smooth={true} duration={500} offset={-70}>En savoir plus</Link>
+           
             </motion.button>
             </div>
             </div>
-            
+    
             </div>
         );
     };  

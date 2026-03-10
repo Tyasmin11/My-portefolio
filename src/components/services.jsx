@@ -37,7 +37,7 @@ const services = () => {
         threshold: 0.2,
     });
   return (
-    <div className='text-white py-16'>
+    <div id='services' className='text-white py-16'>
         <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}

@@ -10,6 +10,8 @@ import { VscClose } from "react-icons/vsc";
 // On importe motion pour animer l'ouverture/fermeture du menu mobile
 
 import {motion} from "motion/react";
+import {Link} from "react-scroll";
+import { useRef, useEffect } from 'react';
 
 
 const navbar = () => {
@@ -37,13 +39,30 @@ const navbar = () => {
 
     const [menu, setMenu] = React.useState(false);
 
+    const menuRef = useRef(null);
+
+useEffect(() => {
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      setMenu(false);
+    }
+  };
+
+  if (menu) {
+    document.addEventListener("mousedown", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [menu]);
         // Liste des liens de navigation
 
     const items = [
-        {id: 1, text: 'A Propos', to : '/about'},
-        {id: 2, text: 'Mes Services', to : '/services'},
-        {id: 3, text: 'Mes Projets', to : '/projects'},
-        {id: 4, text: 'Contactez Moi', to: '/contact'},
+        {id: 1, text: 'A Propos', to : 'about'},
+        {id: 2, text: 'Mes Services', to : 'services'},
+        {id: 3, text: 'Mes Projets', to : 'work'},
+        {id: 4, text: 'Contactez Moi', to: 'contact'},
     ]
     return (
     <div>
@@ -85,10 +104,16 @@ const navbar = () => {
                    
                     {items.map((item) => (
                         <li key={item.id} className='hover:text-purple-500 cursor-pointer'>
+                            <Link
+                             to={item.to}
+                             smooth={true}
+                             duration={500}
+                             offset={-70}>
                             {item.text}
+                            </Link>
                         </li>
                     ))} {/* On parcourt le tableau items et on crée un <li> pour chaque élément */}
-
+                        {/* On a ajouté l'option react-scroll pour pouvoir scroller sur l'élement concerné au clic */}
                 </ul>
             </motion.div>
             <a className='md:text-base lg:text-lg bg-purple-500 hover:bg-purple-400 text-white px-4 py-2 rounded-full'>
@@ -106,8 +131,12 @@ const navbar = () => {
             <motion.div animate={menu ? "open" : "closed"}>
                     {/* Si menu = true, applique l'animation "open", sinon "closed" */}
 
-                <motion.div variants={variants} onClick={() => setMenu((prev)=> !prev)}
-                    className='bg-white w-2/3 h-screen text-black fixed z-10'>
+                <motion.div
+                ref={menuRef}
+                variants={variants}
+                onClick={() => setMenu((prev) => !prev)}
+                className='bg-white w-2/3 h-screen text-black fixed z-10'
+                >
                    {/* onClick : inverse l'état du menu (ouvert <-> fermé) bg-white : fond blanc w-2/3 : largeur de 66% de l'écran h-screen : hauteur égale à la hauteur de l'écran fixed : position fixe (ne bouge pas au scroll) z-10 : niveau de superposition (s'affiche au-dessus) */}
                 {/*Icons pour l'ouverture et la fermeture de menu*/ }
 
@@ -128,9 +157,17 @@ const navbar = () => {
                             <ul className='space-y-6 text-black text-lg'>
                                 {items.map((item) => (
                                 <li key={item.id} className='hover:text-purple-500 duration-200 cursor-pointer'> {/* duration-200 : transition de 200ms pour l'animation au survol */}
+                                    <Link
+                                    to={item.to}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-70}>
                                     {item.text}
-                                </li>
+                                    </Link>
+                                </li> 
                                 ))} 
+                                
+                                {/* On a ajouté l'option react-scroll pour pouvoir scroller sur l'élement concerné au clic */}
                             </ul>
 
                                                         {/* Bouton télécharger CV - mobile */}

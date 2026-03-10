@@ -37,8 +37,8 @@ const about = () => {
   const {ref: refStat3Text, inView: inViewStat3Text} = useInView({ threshold, triggerOnce: false });
   
   return (
-    <div className='text-white py-16'>
-       {/*  Section de présentation About */}
+    <div id='about' className='text-white py-16'> 
+       {/*  Section de présentation About on ajout l'ID pour permettre le référencement de react - scroll */}
       <div className='container mx-auto px-4 text-center'>
         <motion.h2
           ref={refTitle}

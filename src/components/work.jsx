@@ -55,7 +55,7 @@ const work = () => {
 
   return (
             // Section principale avec padding vertical
-    <div ref={ref} className='py-12'>
+    <div id='work' ref={ref} className='py-12'>
 
          {/* Conteneur centré avec largeur maximale */}
         <div className='max-w-7xl mx-auto px-4 sm:px lg:px-8'>
