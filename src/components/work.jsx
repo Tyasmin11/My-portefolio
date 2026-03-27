@@ -1,6 +1,6 @@
 import React from 'react'
 // Importation des images des projets depuis le dossier assets
-import project1 from '../assets/project1.jpg'
+import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.jpg'
 import project3 from '../assets/project3.jpg'
 
@@ -22,27 +22,30 @@ const work = () => {
     const projects = [
         {
             id: 1,
-            title: 'Project 1',
-            description: 'Description of project 1',
+            title: 'Site web Amicale des Anciens Enfants de Troupe',
+            description: 'En collaboration avec la cellule de développement de l’amicale, j’ai participé à la création d’un site web pour l’amicale des anciens enfants de troupe du Burkina Faso (AAET-BF). Le site a été développé en utilisant le framework Laravel pour le backend et React pour le frontend.',
             image: project1,
-            demoLink: '#',
-            codeLink: '#'
+            demoLink: 'https://aaet.bf',
+            codeLink: '#',
+            titreButton: 'Accéder au site'
         },
         {
             id: 2,
-            title: 'Project 2',
-            description: 'Description of project 2',
+            title: 'Application de gestion de plantes médicinales : GESTPLANTE',
+            description: 'Application de gestion de plantes médicinales pour faciliter l\'identification et l’utilisation des plantes dans le cadre de la médecine traditionnelle pour le compte d’une association. L’application a été développée en utilisant Java et  Netbeans pour le backend et le composant Java Swing pour l\'interface utilisateur.',
             image: project2,
             demoLink: '#',
-            codeLink: '#'
+            codeLink: '#',
+            titreButton: 'Non disponible en ligne'
         },
         {
             id: 3,
-            title: 'Project 3',
-            description: 'Description of project 3',
+            title: 'Site e-commerce Skincare Routine : vente de produits cosmétiques ',
+            description: 'Site e-commerce de vente de produits cosmétiques pour  l\'entreprise locale Skincare Routine, permettant de gérer le stock, les commandes et les paiements en ligne.',
             image: project3,
             demoLink: '#',
-            codeLink: '#'
+            codeLink: '#',
+            titreButton: 'En cours'
         },
         ]
         
@@ -87,15 +90,15 @@ const work = () => {
                             transition={{ delay: project.id * 0.3,duration: 0.5 }} //animation en cascade
 
                             key={project.id} // Clé obligatoire pour React désignant chaque élément de la liste
-                            className='bg-gray-900 shadow-lg rounded-lg overflow-hidden'> 
+                            className='bg-gray-900 shadow-lg rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:shadow-purple-500 transition-shadow duration-300'> 
 
 
                             {/* Image du projet */}
                             <img src={project.image} alt={project.title} className='w-full h-48 object-cover' />
-                            <div className='p-6'>
+                            <div className='p-6 flex flex-col justify-between h-120'>
                             <h3 className='text-xl text-white font-semibold mb-2'>{project.title}</h3>
                             <p className='text-slate-400'>{project.description}</p>
-                            <button className='border-2 border-purple-500 text-purple-500 px-4 py-2 mt-2 rounded-full hover:bg-purple-500 hover:text-white transition '>Demo</button>
+                            <button className='mt-auto w-fit border-2 border-purple-500 text-purple-500 px-4 py-2 mt-2 rounded-full hover:bg-purple-500 hover:text-white transition '><a href={project.demoLink} target='_blank' rel='noopener noreferrer'>{project.titreButton}</a></button>
                             </div>
                         </motion.div>
                     ))

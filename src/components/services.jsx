@@ -18,49 +18,49 @@ const services = () => {
     const servicesData = [
         {
             title: 'Spring Boot',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Framework Java pour créer des applications web et des API robustes, rapides à développer et faciles à déployer.',
             icon :<SiSpring className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
 
         },
         {
             title: 'Laravel',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Framework PHP moderne pour développer des applications web sécurisées, structurées et performantes.',
             icon :<FaLaravel className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
         },
         {
             title: 'Python',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Langage polyvalent utilisé pour le développement backend, l’automatisation et la création d’API.',
             icon :<FaPython className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
         },
         {
             title: 'React Js',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Bibliothèque JavaScript utilisée dans la plupart de mes projets frontend pour créer des interfaces utilisateur dynamiques, interactives et réactives.',
             icon :<FaReact className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
         },
         {
             title: 'Tailwind CSS',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Framework CSS utilitaire pour concevoir rapidement des interfaces modernes et responsive.',
             icon :<SiTailwindcss  className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
         },
         {
             title: 'Bootstrap',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Framework CSS pour créer des interfaces responsive avec des composants prêts à l’emploi.',
             icon :<FaBootstrap className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,        
         },
         {
             title: 'Git & GitHub',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Outils de gestion de version pour suivre les modifications du code et collaborer efficacement en équipe.',
             icon :<FaGithub className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
 
         },
         {
             title: 'Postman',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Outil pour tester, documenter et automatiser les requêtes API.',
             icon :<SiPostman className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,    
         },
         {
             title: 'Figma Design',
-            description: 'Building responsive and dynamic websites using modern technologies.',
+            description: 'Outil de design UI/UX pour concevoir des maquettes et prototypes d’applications modernes.',
             icon :<FaFigma className=" text-purple-500 text-4xl sm:text-5xl lg:text-6xl mb-4 mx-auto" />,
         },
     ];

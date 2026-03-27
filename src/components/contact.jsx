@@ -54,7 +54,7 @@ const contact = () => {
                 transition={{delay:0.2, duration:0.5}}
                 className='flex items-center space-x-4'>
                 <div className='bg-purple-500 p-4 rounded-full'>
-                   <FaPhone className='text-white w-6 h-6'/> 
+                <FaPhone className='text-white w-6 h-6'/> 
                 </div>
                 <div>
                     <p className='text-lg font-medium text-white'>Contactez moi</p>
@@ -68,11 +68,27 @@ const contact = () => {
                 transition={{delay:0.4, duration:0.5}}
                 className='flex items-center space-x-4'>
                 <div className='bg-purple-500 p-4 rounded-full'>
-                   <FaEnvelope className='text-white w-6 h-6'/> 
+                <FaEnvelope className='text-white w-6 h-6'/> 
                 </div>
                 <div>
                     <p className='text-lg font-medium text-white'>Email</p>
-                    <p className='text-gray-300'><a href="#" className='text-purple-400 hover:text-blue-300'>traoreyasmine71@gmail.com</a></p>
+                    <p className='text-gray-300'><a href='#' onClick={(e) => {
+                    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=traoreyasmine71@gmail.com", "_blank");
+                    }} className='text-purple-400 hover:text-blue-300'>traoreyasmine71@gmail.com</a></p>
+                </div>
+                </motion.div>
+
+                <motion.div 
+                initial={{opacity: 0, x:-50}}
+                animate={inView ? {opacity:1, x:0} : {}}
+                transition={{delay:0.4, duration:0.5}}
+                className='flex items-center space-x-4'>
+                <div className='bg-purple-500 p-4 rounded-full'>
+                <FaLinkedin className='text-white w-6 h-6'/> 
+                </div>
+                <div>
+                    <p className='text-lg font-medium text-white'>LinkedIn</p>
+                    <p className='text-gray-300'><a href="https://www.linkedin.com/in/yasmine-traore-29103528b" target='_blank' rel='noopener noreferrer' className='text-purple-400 hover:text-blue-300'>www.linkedin.com/in/yasmine-traore-29103528b</a></p>
                 </div>
                 </motion.div>
 
@@ -82,7 +98,7 @@ const contact = () => {
                 transition={{delay:0.6, duration:0.5}}
                 className='flex items-center space-x-4'>
                 <div className='bg-purple-500 p-4 rounded-full'>
-                   <FaMapMarkerAlt className='text-white w-6 h-6'/> 
+                <FaMapMarkerAlt className='text-white w-6 h-6'/> 
                 </div>
                 <div>
                     <p className='text-lg font-medium text-white'>Adresse</p>
@@ -103,7 +119,7 @@ const contact = () => {
                     className='border border-purple-500 bg-gray-800 p-4 rounded-md w-full' />
                 </div>
 
-                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                     <input type="text" placeholder='Votre Contact' 
                     className='border border-purple-500 bg-gray-800 p-4 rounded-md w-full' />
                     <input type="text" placeholder="Votre domaine d'activité"
@@ -112,7 +128,7 @@ const contact = () => {
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                     <select
-                       /*  value={projectType}
+                    /*  value={projectType}
                         onChange={(e) => setProjectType(e.target.value)} */
                         className='border border-purple-500 bg-gray-800 p-4 rounded-md w-full'
                         >
