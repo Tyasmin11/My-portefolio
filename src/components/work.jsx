@@ -14,7 +14,7 @@ import {motion} from 'motion/react'
 import { useInView } from 'react-intersection-observer'
 
 
-// Déclaration du composant ( Bonne pratique : commencer par une majuscule)
+// Déclaration du composant ( Bonne pratique : commencer par une majuscule
 const work = () => {
 
      // Tableau contenant les données des projets
