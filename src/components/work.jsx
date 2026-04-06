@@ -40,12 +40,12 @@ const work = () => {
         },
         {
             id: 3,
-            title: 'Site e-commerce Skincare Routine : vente de produits cosmétiques ',
-            description: 'Site e-commerce de vente de produits cosmétiques pour  l\'entreprise locale Skincare Routine, permettant de gérer le stock, les commandes et les paiements en ligne.',
+            title: 'Site de Dasyam Systems AI : Notre agence de développement web et mobile',
+            description: 'Site web de Dasyam Systems AI, une agence de développement web et mobile spécialisée dans la création de solutions numériques innovantes. Le site a été développé en utilisant React , Vite et TailwindCSS.',
             image: project3,
             demoLink: '#',
             codeLink: '#',
-            titreButton: 'En cours'
+            titreButton: 'Accéder au site'
         },
         ]
         
